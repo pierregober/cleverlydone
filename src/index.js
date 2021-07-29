@@ -8,25 +8,10 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider as ReduxProvider } from "react-redux";
 import store from "./redux/store";
 
-// const onRedirectCallback = appState => {
-//   history.push(
-//     appState && appState.targetUrl
-//       ? appState.targetUrl
-//       : window.location.href = process.env.REACT_APP_REDIRECT_URL
-//   );
-// };
-// // Please see https://auth0.github.io/auth0-react/interfaces/auth0_provider.auth0provideroptions.html
-// // for a full list of the available properties on the provider
-// const config = getConfig();
-
-//Might have to do it this way for speed
-//Mobile app redirect
-// if (window.innerWidth < 769 && process.env.NODE_ENV === "production") {
-//   window.location.href =
-//     "https://app.imstools.us" +
-//     window.location.pathname +
-//     window.location.search;
-// }
+// Vendor css
+import "normalize.css";
+import "@blueprintjs/core/lib/css/blueprint.css";
+import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 
 ReactDOM.render(
   <ReduxProvider store={store}>

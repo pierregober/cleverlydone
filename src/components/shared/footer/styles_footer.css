@@ -1,0 +1,7 @@
+.footerContainer{
+  height:2.5vh;
+  background-color: rgb(174, 175, 235);
+  display: flex;
+  justify-content: center;
+font-size: xx-small;
+}

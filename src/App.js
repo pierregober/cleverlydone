@@ -1,23 +1,37 @@
+import React, { Suspense } from "react";
+
 import logo from "./logo.svg";
 import "./App.css";
 
-import Navbar from "../src/components/shared/navbar/Navbar";
+import Nav from "./components/shared/navbar/Nav";
+import Footer from "./components/shared/footer/Footer";
+import Landing from "./components/landing/Landing";
 
 //Vendor
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import { Spinner } from "@blueprintjs/core";
 
 //Routes
 import AppRoutes from "./routes/AppRoutes";
 
 function App() {
+  const isAuthenticated = false;
+
   return (
     <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/">
-          <AppRoutes />
+      {isAuthenticated ? <Nav /> : <></>}
+      <Suspense fallback={<Spinner />}>
+        <Route exact path="/">
+          {isAuthenticated ? <Redirect to={"/Home"} /> : <Landing />}
         </Route>
-      </Switch>
+        <AppRoutes />
+      </Suspense>
+      {isAuthenticated ? <Footer /> : <></>}
     </Router>
   );
 }

@@ -1,0 +1,6 @@
+.navContainer{
+  height:3.5vh;
+  background-color: rgb(174, 175, 235);
+  display: flex;
+  justify-content: space-between;
+}
