@@ -1,0 +1,100 @@
+.loginButton{
+  background-color: rgb(80, 82, 207);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.15rem;
+}
+
+
+.landingBase{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.introHeading{
+  display: flex;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 80%;
+  max-width: 13.5em;
+  margin: .75em auto 0;
+  font: 400 2.0rem/2.4rem Google Sans,sans-serif;
+  color: rgba(0,0,0,.87);
+}
+
+.introSubHeading{
+  display: flex;
+  visibility: inherit;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 60%;
+  max-width: 620px;
+  margin: 2rem auto 3rem;
+  font: 400 1rem/1.3rem Google Sans,sans-serif;
+  color: rgba(0,0,0,.67);
+}
+
+.introButton{
+  display: flex;
+  width: 150px;
+  background-color: #1A73E8;
+  padding: .8rem;
+  color: white;
+  border-radius: 0.15rem;
+  white-space: nowrap;
+  font: 500 .8rem/1 Google Sans,sans-serif;
+  justify-content: space-around;
+}
+
+.introButton:hover{
+  background-color:#1454a7
+}
+
+/* FADE animination  */
+@keyframes myAnimation{
+  0%{
+    opacity: 1;
+  }
+  10%{
+    opacity: 0.9;
+  }
+  20%{
+    opacity: 0.8;
+  }
+  30%{
+    opacity: 0.7;
+  }
+  40%{
+    opacity: 0.6;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  60%{
+    opacity: 0.4;
+  }
+  70%{
+    opacity: 0.3;
+  }
+  80%{
+    opacity: 0.2;
+  }
+  90%{
+    opacity: 0.1;
+  }
+  100%{
+    display: none !important;
+    opacity: 0;
+  }
+}
+
+.introButtonAnim{
+    animation-name: myAnimation;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}

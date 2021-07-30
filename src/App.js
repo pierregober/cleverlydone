@@ -20,7 +20,7 @@ import { Spinner } from "@blueprintjs/core";
 import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
 
   return (
     <Router>

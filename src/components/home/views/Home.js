@@ -11,10 +11,7 @@ import { Helmet } from "react-helmet";
 function Home() {
   return (
     <div className="home">
-      <Helmet>
-        <title>Home</title>
-        {/* <link rel="canonical" href={`${process.env.REACT_APP_URL}/`} /> */}
-      </Helmet>
+      <div>You made it!</div>
     </div>
   );
 }
