@@ -21,7 +21,7 @@ const appRoutes = () =>
     {
       Component: Home,
       name: "Home",
-      path: "/",
+      path: "/home",
       title: "Home",
     },
     {

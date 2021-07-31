@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 
+//Auth
+import { useAuth0 } from "@auth0/auth0-react";
+
+//Custom CSS
 import "./styles_landing.css";
 
 function Landing() {
   const [disappear, setDisappear] = useState(false);
+  const { isAuthenticated, loginWithRedirect } = useAuth0();
 
   function showLoginIn() {
     setDisappear(true);
@@ -14,6 +19,7 @@ function Landing() {
 
   function signIn() {
     console.log("hey replace this with fetch to auth0 endpoint");
+    loginWithRedirect();
   }
 
   return (

@@ -1,4 +1,8 @@
-
+body, html{
+  margin: 0;
+  height: 100%;
+  overflow-y: hidden;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
