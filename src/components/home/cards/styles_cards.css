@@ -9,7 +9,71 @@
 
 .h-50vh {height: 49vh}
 
-.bg-red { background: red; }
-.bg-blue { background: blue; }
-.bg-yellow { background: yellow; }
-.bg-orange { background: orange; }
+.card{
+  background-color:grey;
+  padding:0.15rem;
+  display: flex;
+  flex: 1;
+  width: 85%;
+  height: 100%;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+
+.cardInner{
+  padding:1rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.leftCards{
+    flex-wrap: wrap;
+}
+
+.cardOuter{
+  margin: 1rem;
+}
+.centerUpper{
+  align-items: center;
+  margin-top: 10rem;
+}
+.centerBottom{
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.jusCenter{
+  justify-content: center;
+}
+
+.prod{
+  background-color: #FFFAD1;
+}
+
+.invest{
+  background-color: #E7F1EA;
+}
+
+.interview{
+  background-color: #DDEBF8;
+}
+
+.code{
+  background-color: #F5E6DB;
+}
+
+.cardDetails{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.cardPic{
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.sectionImg{
+  border-radius: 10px
+}

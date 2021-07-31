@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 
 //Custom Components
 import InterviewCard from "../cards/InterviewCard";
@@ -16,8 +16,8 @@ function Home() {
   return (
     <div className="flex flex-row flex-wrap h-100">
       <InterviewCard />
-      <CodingCard />
       <InvestingCard />
+      <CodingCard />
       <ProductivityCard />
     </div>
   );
